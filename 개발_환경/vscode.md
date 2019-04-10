@@ -14,8 +14,15 @@ VSCode는, Microsoft 사에서 개발한 텍스트 에디터입니다.
 - Git 플러그인이 기본으로 지원됩니다. 내부 익스플로러 상에서 파일들의 Git Status를 볼 수 있고, Conflict Resolve도 편하게 할 수 있습니다.
 - 에디터의 설정이 json파일을 이용하여 이루어집니다. 이 파일의 import/export를 통해 설정의 백업 및 복구가 가능합니다.
 
-## HowTo / Notes
-- File/Preferences/Settings에서 Line Ending을 LF로, Encoding을 UTF-8로 설정해놓는 것이 호환성을 위해 좋은 선택입니다.
+## HowTo 
+[공식 튜토리얼 문서](https://code.visualstudio.com/docs)  
+- 먼저 작업하고자 하는 폴더를 열고, 그 안에 있는 파일들을 VSCode 내에서 수정하는 방식으로 작업합니다.
+- 컴파일 및 실행은 내장 터미널에서 할 수도 있고, 디버거를 연결하여 할 수도 있고, Task를 설정하여 실행할 수도 있습니다.
+
+## Notes
+- File/Preferences/Settings에서 각종 기본 설정들과 플러그인 설정들을 수정할 수 있습니다.
 - 하단 표시줄에서 간단한 상태 등을 볼 수 있습니다. 클릭하여 조작이 가능합니다.
 - Ctrl + ` 을 이용하여 터미널을 열고 닫을 수 있습니다.
 - File/Preferences/Color Theme에서 테마를 변경할 수 있습니다. 마음에 맞는 테마가 존재하지 않을 경우, 플러그인을 설치하여 추가할 수 있습니다.
+- Vim, emacs, notepad++ 등과 비슷한 환경을 사용하려 할 경우 Keymap 플러그인을 설치하여 사용할 수 있습니다.
+- 윈도우의 경우, 설정 파일들은 %HOMEPATH%\\.vscode 폴더에 저장됩니다.
