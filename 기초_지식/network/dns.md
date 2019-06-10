@@ -8,9 +8,11 @@ domain name은 `.`에 의해 구분되는 label들을 가집니다. 가장 오�
 domain name를 IP로 바꾸는 과정은 root domain에서 부터 sub-domain으로 내려가는 과정입니다. 과정은 다음과 같습니다.
 1. 사용자가 `martini.snucse.org`를 입력합니다.
 2. root domain의 name server에 가서 `martini.snucse.org`를 요청합니다.
-3. root domain의 name server는 이 요청을 `org` domain의 name server에 전달합니다.
-4. 마찬가지로 `org` domain의 name server는 이 요청을 `snucse.org` domain의 name server에 전달합니다.
-5. `snucse.org` domain의 name server에는 `martini.snucse.org`에 대한 IP가 저장되어 있으므로 이를 전달해줍니다.
+3. root domain의 name server는 `org` domain의 name server를 가르킵니다.
+4. 사용자는 `org` domain의 name server에 가서 `martini.snucse.org`를 요청합니다.
+5. 마찬가지로 `org` domain의 name server는 `snucse.org` domain의 name server를 가르킵니다.
+6. 사용자는 `snucse.org` domain의 name server에 가서 `martini.snucse.org`를 요청합니다.
+7. `snucse.org` domain의 name server에는 `martini.snucse.org`에 대한 IP가 저장되어 있으므로 이를 전달해줍니다.
 
 ## 참고자료
 [DNS 위키백과](https://en.wikipedia.org/wiki/Domain_Name_System)
